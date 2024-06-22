@@ -6,6 +6,7 @@ tl.to('#landing-page h1', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0%
   .to('#learn-more-container', {opacity: 1}, "-=1.5")
   .to('.navbar', {y: 0}, '-=3')
   .to('.logo', {opacity: 1}, '-=1.5')
+  .to('.toggle-button', {opacity: 1}, '-=2')
   .to('#home-link', {opacity: 1}, '-=2')
   .to('#about-link', {opacity: 1}, '-=2')
   .to('#rare-earth-link', {opacity: 1}, '-=2')
