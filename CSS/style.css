@@ -248,6 +248,10 @@ body{
         "item5 item6";
 }
 
+.about-box {
+    margin-bottom: 20px;
+}
+
 
 .about-box p{
     font-family: "Karla", sans-serif;
@@ -380,7 +384,6 @@ body{
     /* Your styles for extra small devices */
     #landing-page{
         background-color:var(--primary-blue);
-        background-color: red;
     }
 
     #landing-page h1 {
@@ -416,6 +419,17 @@ body{
         width: 75%;
     }
 
+    #about-content {
+        width: 70%;
+    }
+    
+    #about-page h2{
+        font-family: "Outfit", sans-serif;
+        color: var(--primary-blue);
+        font-size: 7vw;
+        margin-bottom: 20px;
+    }
+
     #about-boxes-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
@@ -427,7 +441,43 @@ body{
             "item5"
             "item6";
     }
+
+    .about-box {
+        margin-bottom: 0;
+    }
+
+    .about-box p{
+        font-size: 2vw;
+    }
+
+    .about-box br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 20%;
+    }
+
+    .about-image-container {
+        width: 100%;;
+    }
+
+    .about-image-container img{
+        border-radius: 20px;
+    }
+
+    .right-image {
+        transform: translate(0);
+    }
     
+    .left-image{
+        transform: translate(0);
+    }
+
+    .about-image-background{
+        width: 100%;
+        border-radius: 20px;
+        left:0;
+    }    
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -435,7 +485,6 @@ body{
     /* Your styles for small devices */
     #landing-page{
         background-color:var(--primary-blue);
-        background-color: green;
     }
 
 
@@ -461,9 +510,22 @@ body{
         width: 90%;
     }
 
-    .about-box p{
-        font-size: 1.2vw;
+    .about-box {
+        margin-bottom: 10px;
     }
+
+    .about-box p{
+        font-size: 1.3vw;
+    }
+
+    .about-box br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 20%;
+    }
+    
+        
 
     .right-image {
         transform: translate(-10px, -10px);
@@ -480,7 +542,6 @@ body{
     /* Your styles for medium devices */
     #landing-page{
         background-color:var(--primary-blue);
-        background-color: yellow;
     }
 
     .navbar-links li a {
@@ -511,6 +572,11 @@ body{
         width: 80%;
     }
 
+    .about-box {
+        margin-bottom: 15px;
+    }
+    
+
     .about-box p{
         font-size: 1.1vw;
     }
@@ -529,7 +595,6 @@ body{
     /* Your styles for large devices */
     #landing-page{
         background-color:var(--primary-blue);
-        background-color: blue;
     }
 
     .navbar-links li a {
@@ -575,16 +640,6 @@ body{
     #svg-container-bottom {  
         top: 40%;
     }
-
-    
-
-    /*#landing-page h1 {
-        font-size: 70px;
-    }
-
-    #landing-page h2 {
-        font-size: 24px;    
-    }*/
 
     #profile-pic-container {
         width: 180px; 
