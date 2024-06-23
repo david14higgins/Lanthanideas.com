@@ -229,16 +229,25 @@ body{
     margin-bottom: 20px;
 }
 
+.item-1 { grid-area: item1; }
+.item-2 { grid-area: item2; }
+.item-3 { grid-area: item3; }
+.item-4 { grid-area: item4; }
+.item-5 { grid-area: item5; }
+.item-6 { grid-area: item6; }
+
+
 #about-boxes-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:20px;
     width:100%;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6";
 }
 
-.about-box {
-    
-}
 
 .about-box p{
     font-family: "Karla", sans-serif;
@@ -371,6 +380,7 @@ body{
     /* Your styles for extra small devices */
     #landing-page{
         background-color:var(--primary-blue);
+        background-color: red;
     }
 
     #landing-page h1 {
@@ -406,6 +416,17 @@ body{
         width: 75%;
     }
 
+    #about-boxes-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item4"
+            "item3"
+            "item5"
+            "item6";
+    }
     
 }
 
@@ -414,6 +435,7 @@ body{
     /* Your styles for small devices */
     #landing-page{
         background-color:var(--primary-blue);
+        background-color: green;
     }
 
 
@@ -434,6 +456,22 @@ body{
         width: 160px;
         height: 50px; 
     }
+
+    #about-content {
+        width: 90%;
+    }
+
+    .about-box p{
+        font-size: 1.2vw;
+    }
+
+    .right-image {
+        transform: translate(-10px, -10px);
+    }
+    
+    .left-image{
+        transform: translate(10px, -10px);
+    }
     
 }
 
@@ -442,6 +480,7 @@ body{
     /* Your styles for medium devices */
     #landing-page{
         background-color:var(--primary-blue);
+        background-color: yellow;
     }
 
     .navbar-links li a {
@@ -467,6 +506,22 @@ body{
         width: 160px;
         height: 50px; 
     }
+
+    #about-content {
+        width: 80%;
+    }
+
+    .about-box p{
+        font-size: 1.1vw;
+    }
+
+    .right-image {
+        transform: translate(-15px, -15px);
+    }
+    
+    .left-image{
+        transform: translate(15px, -15px);
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -474,6 +529,7 @@ body{
     /* Your styles for large devices */
     #landing-page{
         background-color:var(--primary-blue);
+        background-color: blue;
     }
 
     .navbar-links li a {
@@ -498,6 +554,14 @@ body{
     #learn-more-container {
         width: 180px;
         height: 60px; 
+    }
+
+    .right-image {
+        transform: translate(-15px, -15px);
+    }
+    
+    .left-image{
+        transform: translate(15px, -15px);
     }
 }
 
