@@ -157,9 +157,26 @@ body{
     margin: 0 auto;
     opacity: 0;
     z-index: 100;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
   }
 
-#learn-more-btn {
+#learn-more-container a {
+    text-decoration: none;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    display: block;
+    
+}
+
+/*#learn-more-btn {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -173,10 +190,14 @@ body{
     font-weight: 400;
     transition: 0.25s;
     
+}*/
+
+#learn-more-container:hover{
+    box-shadow: inset 200px 0 0 0 var(--primary-white);
+    
 }
 
-#learn-more-btn:hover{
-    box-shadow: inset 200px 0 0 0 var(--primary-white);
+#learn-more-container:hover a {
     color: var(--primary-blue);
 }
 
