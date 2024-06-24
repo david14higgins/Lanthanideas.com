@@ -369,9 +369,55 @@ body{
 #key-staff-page h2{
     font-family: "Outfit", sans-serif;
     color: var(--primary-white);
-    font-size: 2vw;
-    margin-bottom: 20px;
+    font-size: 3vw;
+    margin-top:30px;
+    margin-bottom: 10px;
 }
+
+#key-staff-page h3{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-white);
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.staff-photo-container {
+    width: 20%;
+}
+
+.staff-photo-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#ian-photo-container {
+    float:left;
+    margin-right: 20px
+}
+
+#dave-photo-container {
+    float: right;
+    margin-left: 20px;
+}
+
+#key-staff-container p {
+    font-family: "Karla", sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: var(--primary-white);
+    margin:0;
+}
+
+
+#key-staff-container hr {
+    border: 1px solid white;
+    width: 80%;
+    margin: 40px auto;
+}
+
 
 
 
