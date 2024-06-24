@@ -6,6 +6,7 @@
     /* Neon Yellow #CFFF04 */
   }
 
+
 body{
     margin: 0;
     padding:0; 
@@ -233,7 +234,6 @@ body{
     color: var(--primary-blue);
     font-size: 4vw;
     margin-bottom: 20px;
-    opacity: 0;
 }
 
 .item-1 { grid-area: item1; }
@@ -243,10 +243,12 @@ body{
 .item-5 { grid-area: item5; }
 .item-6 { grid-area: item6; }
 
+/*Change these for GSAP Scroll Trigger loading in */
 .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
-    transform: translateY(50px);
-    opacity: 0;
+    transform: translateY(0);
+    opacity: 1;
 }
+
 
 
 #about-boxes-container {
@@ -258,6 +260,7 @@ body{
         "item1 item2"
         "item3 item4"
         "item5 item6";
+    margin-bottom: 30px;
 }
 
 .about-box {
@@ -341,8 +344,6 @@ body{
     transform: translateY(0);
 }
 
-
-
 .about-image-background{
     width: 90%;
     height: 100%;
@@ -353,6 +354,24 @@ body{
     left: 5%;
 }
 
+#key-staff-page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: var(--primary-blue);
+}
+
+#key-staff-content {
+    width: 70%;
+}
+
+#key-staff-page h2{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-white);
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
 
 
 

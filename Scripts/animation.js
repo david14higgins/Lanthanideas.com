@@ -1,50 +1,50 @@
-const lenis = new Lenis()
+// const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
- console.log(e)
-})
+// lenis.on('scroll', (e) => {
+//  console.log(e)
+// })
 
-function raf(time) {
- lenis.raf(time)
- requestAnimationFrame(raf)
-}
+// function raf(time) {
+//  lenis.raf(time)
+//  requestAnimationFrame(raf)
+// }
 
-requestAnimationFrame(raf)
+// requestAnimationFrame(raf)
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('#about-header', {
-  scrollTrigger: { 
-    trigger: "#about-header",
-    start: "top 100%",
-    end: "top 70%", 
-    scrub: true
-  },
-  opacity: 1, 
-  y: 0
-});
+// gsap.to('#about-header', {
+//   scrollTrigger: { 
+//     trigger: "#about-header",
+//     start: "top 100%",
+//     end: "top 70%", 
+//     scrub: true
+//   },
+//   opacity: 1, 
+//   y: 0
+// });
 
-gsap.to('.item-1', {
-  scrollTrigger: { 
-    trigger: ".item-1",
-    start: "top 100%",
-    end: "top 70%", 
-    scrub: true
-  },
-  opacity: 1, 
-  y: 0
-});
+// gsap.to('.item-1', {
+//   scrollTrigger: { 
+//     trigger: ".item-1",
+//     start: "top 100%",
+//     end: "top 70%", 
+//     scrub: true
+//   },
+//   opacity: 1, 
+//   y: 0
+// });
 
-gsap.to('.item-2', {
-  scrollTrigger: { 
-    trigger: ".item-2",
-    start: "top 100%",
-    end: "top 70%", 
-    scrub:true
-  },
-  opacity: 1, 
-  y: 0
-});
+// gsap.to('.item-2', {
+//   scrollTrigger: { 
+//     trigger: ".item-2",
+//     start: "top 100%",
+//     end: "top 70%", 
+//     scrub:true
+//   },
+//   opacity: 1, 
+//   y: 0
+// });
 
 // gsap.to('.item-3', {
 //   scrollTrigger: { 
@@ -57,40 +57,40 @@ gsap.to('.item-2', {
 //   y: 0
 // });
 
-gsap.to('.item-4', {
-  scrollTrigger: { 
-    trigger: ".item-4",
-    start: "top 100%",
-    end: "top 70%",
-    scrub:true
-  },
-  opacity: 1, 
-  y: 0
-});
+// gsap.to('.item-4', {
+//   scrollTrigger: { 
+//     trigger: ".item-4",
+//     start: "top 100%",
+//     end: "top 70%",
+//     scrub:true
+//   },
+//   opacity: 1, 
+//   y: 0
+// });
 
 
 
-gsap.to('.item-5', {
-  scrollTrigger: { 
-    trigger: ".item-5",
-    start: "top 100%",
-    end: "top 70%", 
-    scrub:true
-  },
-  opacity: 1,
-  y: 0
-});
+// gsap.to('.item-5', {
+//   scrollTrigger: { 
+//     trigger: ".item-5",
+//     start: "top 100%",
+//     end: "top 70%", 
+//     scrub:true
+//   },
+//   opacity: 1,
+//   y: 0
+// });
 
-gsap.to('.item-6', {
-  scrollTrigger: { 
-    trigger: ".item-6",
-    start: "top 100%",
-    end: "top 70%", 
-    scrub:true
-  },
-  opacity: 1,
-  y: 0
-});
+// gsap.to('.item-6', {
+//   scrollTrigger: { 
+//     trigger: ".item-6",
+//     start: "top 100%",
+//     end: "top 70%", 
+//     scrub:true
+//   },
+//   opacity: 1,
+//   y: 0
+// });
 
 let tl = gsap.timeline({defaults: {ease: "power4.inOut", duration: 2}});
 
