@@ -611,16 +611,11 @@ body{
     }
 
     .staff-photo-container {
-        float: none;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 10px;
+        width: 40%;
     }
 
     .staff-photo-container img {
-        width: 30%;
+        
     }
 
 }
