@@ -1,3 +1,5 @@
+/* ----- Document Wide Settings ------ */
+
 :root {
     --primary-blue: #213E60;
     --secondary-blue: #94B6EF;
@@ -6,12 +8,23 @@
     /* Neon Yellow #CFFF04 */
   }
 
-
 body{
     margin: 0;
     padding:0; 
     overflow-x: hidden;
-}   
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../Fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("../Fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+
+/* ----- Navbar Styles ------ */
 
 .navbar {
     width: 100%;
@@ -81,6 +94,42 @@ body{
     border-radius: 10px;
 }
 
+/*Responsive nav bar for all small devices */
+@media (max-width: 767.98px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* Landing Page Styles */
+
 #landing-page{
     margin: 0; 
     padding: 0;
@@ -104,7 +153,7 @@ body{
     
 }
 
-#landing-page h1 {
+#landing-content h1 {
     font-family: "Outfit", sans-serif;
     font-weight: 500;
     font-size: 6vw;
@@ -119,7 +168,7 @@ body{
 }
 
 
-#landing-page h2 {
+#landing-content h2 {
     font-family: "Karla", sans-serif;
     font-weight: 400;
     font-size: 2vw;
@@ -135,7 +184,7 @@ body{
     color: var(--primary-orange);
 }
 
-#profile-pic-container {
+#landing-pic-container {
     width: 200px; 
     height: 200px; 
     border-radius: 50%; 
@@ -145,7 +194,7 @@ body{
     opacity: 0;
 }
 
-#profile-pic-container img {
+#landing-pic-container img {
     width: 100%; 
     height: auto; 
     display: block; 
@@ -187,6 +236,8 @@ body{
     color: var(--primary-blue);
 }
 
+/* ----- Background SVG Animations ------ */
+
 #svg-container-top {
     right: 0;
     top: -5%;
@@ -214,9 +265,31 @@ body{
     width: 100%;
     height: 100%;
     opacity: 0.1;
-    animation: pulse 7s infinite;
-    
+    animation: pulse 7s infinite;   
 }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Initial size */
+    }
+    50% {
+        transform: scale(1.1); /* Enlarged size */
+    }
+    100% {
+        transform: scale(1); /* Back to initial size */
+    }
+}
+
+@keyframes rotateInfinite {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----- About Page Styles ------ */
 
 #about-page{
     position: relative;
@@ -229,13 +302,14 @@ body{
     width: 70%;
 }
 
-#about-page h2{
+#about-content h2{
     font-family: "Outfit", sans-serif;
     color: var(--primary-blue);
     font-size: 4vw;
     margin-bottom: 20px;
 }
 
+/* Assign div boxes to grid items */
 .item-1 { grid-area: item1; }
 .item-2 { grid-area: item2; }
 .item-3 { grid-area: item3; }
@@ -248,8 +322,6 @@ body{
     transform: translateY(0);
     opacity: 1;
 }
-
-
 
 #about-boxes-container {
     display: grid;
@@ -267,8 +339,7 @@ body{
     margin-bottom: 20px;
 }
 
-
-.about-box p{
+.text-box p{
     font-family: "Karla", sans-serif;
     font-weight: 500;
     font-size: 1vw;
@@ -325,11 +396,12 @@ body{
     opacity: 0;
     transition: 0.6s;
     z-index: 100;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .image-caption p {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
     color: white;
     font-size: 1.2vw;
     transform: translateY(10px);
@@ -354,6 +426,8 @@ body{
     left: 5%;
 }
 
+/* ----- Key Staff Page Styles ------ */
+
 #key-staff-page{
     position: relative;
     display: flex;
@@ -366,7 +440,7 @@ body{
     width: 70%;
 }
 
-#key-staff-page h2{
+#key-staff-content h2{
     font-family: "Outfit", sans-serif;
     color: var(--primary-white);
     font-size: 3vw;
@@ -374,7 +448,7 @@ body{
     margin-bottom: 10px;
 }
 
-#key-staff-page h3{
+#key-staff-content h3{
     font-family: "Outfit", sans-serif;
     color: var(--primary-white);
     font-size: 2vw;
@@ -403,7 +477,7 @@ body{
     margin-left: 20px;
 }
 
-#key-staff-container p {
+#key-staff-content p {
     font-family: "Karla", sans-serif;
     font-weight: 300;
     font-size: 1vw;
@@ -412,98 +486,47 @@ body{
 }
 
 
-#key-staff-container hr {
+#key-staff-content hr {
     border: 1px solid white;
     width: 80%;
     margin: 40px auto;
 }
 
 
-
-
-@font-face {
-    font-family: "Outfit";
-    src: url("../Fonts/Outfit/Outfit-VariableFont_wght.ttf");
-}
-
-@font-face {
-    font-family: "Karla";
-    src: url("../Fonts/Karla/Karla-VariableFont_wght.ttf");
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1); /* Initial size */
-    }
-    50% {
-        transform: scale(1.1); /* Enlarged size */
-    }
-    100% {
-        transform: scale(1); /* Back to initial size */
-    }
-}
-
-@keyframes rotateInfinite {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-/*Responsive nav bar for all small devices */
-@media (max-width: 767.98px) {
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-
-
+/* ----- Responsive Settings ------ */
 
 /* Extra small devices (portrait phones, less than 576px) */
+
 @media (max-width: 575.98px) { 
-    /* Your styles for extra small devices */
+    
+    /* ----- Landing Page Styles ------ */
+
     #landing-page{
         background-color:var(--primary-blue);
     }
 
-    #landing-page h1 {
+    #landing-content {
+        width: 75%;
+    }
+
+    #landing-content h1 {
         font-size: 12vw;
         line-height: 1.1;
     }
 
-    #landing-page h2 {
+    #landing-content h2 {
         font-size: 3vw;
         font-weight: 200;
+    }
+
+    #landing-pic-container {
+        width: 160px; 
+        height: 160px;
+    }
+
+    #learn-more-container {
+        width: 160px;
+        height: 50px; 
     }
 
     #svg-container-top {  
@@ -515,31 +538,20 @@ body{
         width: 70%;
     }
 
-    #profile-pic-container {
-        width: 160px; 
-        height: 160px;
-    }
-
-    #learn-more-container {
-        width: 160px;
-        height: 50px; 
-    }
-
-    #landing-content {
-        width: 75%;
-    }
+    /* ----- About Page Styles ------ */
 
     #about-content {
         width: 70%;
     }
     
-    #about-page h2{
+    #about-content h2{
         font-family: "Outfit", sans-serif;
         color: var(--primary-blue);
         font-size: 7vw;
         margin-bottom: 20px;
     }
 
+    /* Change order of about divs for mobile */
     #about-boxes-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
@@ -575,6 +587,7 @@ body{
         border-radius: 20px;
     }
 
+    /*No offset on mobile*/
     .right-image {
         transform: translate(0);
     }
@@ -589,54 +602,48 @@ body{
         left:0;
     }    
 
+    /* ----- Key Staff Page Styles ------ */
+    
     #key-staff-content h2{
         font-size: 6vw;
         margin-bottom: 0px;
     }
 
-    #key-staff-container h3 {
+    #key-staff-content h3 {
         font-size: 4vw;
         margin-bottom: 10px;
     }
 
-    #key-staff-container br {
+    #key-staff-content br {
         content: "";
         margin: 2em;
         display: block;
         font-size: 20%;
     }
 
-    #key-staff-container p {
+    #key-staff-content p {
         font-size: 2vw;
     }
 
     .staff-photo-container {
         width: 40%;
     }
-
-    .staff-photo-container img {
-        
-    }
-
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    /* Your styles for small devices */
+
+    /* ----- Landing Page Styles ------ */
+
     #landing-page{
         background-color:var(--primary-blue);
     }
 
-
-    #landing-page h2 {
+    #landing-content h2 {
         font-size: 2.5vw;
     }
 
-    #svg-container-bottom {  
-        top: 60%;
-    }
-
-    #profile-pic-container {
+    #landing-pic-container {
         width: 160px; 
         height: 160px;
     }
@@ -645,6 +652,12 @@ body{
         width: 160px;
         height: 50px; 
     }
+
+    #svg-container-bottom {  
+        top: 60%;
+    }
+
+    /* ----- About Page Styles ------ */
 
     #about-content {
         width: 90%;
@@ -665,8 +678,6 @@ body{
         font-size: 20%;
     }
     
-        
-
     .right-image {
         transform: translate(-10px, -10px);
     }
@@ -679,7 +690,9 @@ body{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    /* Your styles for medium devices */
+    
+    /* ----- Landing Page Styles ------ */
+
     #landing-page{
         background-color:var(--primary-blue);
     }
@@ -689,11 +702,7 @@ body{
         padding: .5rem 0.5rem;
     }
 
-    #svg-container-bottom {  
-        top: 50%;
-    }
-
-    #profile-pic-container {
+    #landing-pic-container {
         width: 160px; 
         height: 160px;
     }
@@ -707,6 +716,12 @@ body{
         width: 160px;
         height: 50px; 
     }
+
+    #svg-container-bottom {  
+        top: 50%;
+    }
+
+    /* ----- About Page Styles ------ */
 
     #about-content {
         width: 80%;
@@ -732,7 +747,9 @@ body{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    /* Your styles for large devices */
+
+    /* ----- Landing Page Styles ------ */
+    
     #landing-page{
         background-color:var(--primary-blue);
     }
@@ -742,11 +759,7 @@ body{
         padding: 0.5rem 0.75rem
     }
 
-    #svg-container-bottom {  
-        top: 40%;
-    }
-
-    #profile-pic-container {
+    #landing-pic-container {
         width: 180px; 
         height: 180px;
     }
@@ -760,6 +773,12 @@ body{
         width: 180px;
         height: 60px; 
     }
+
+    #svg-container-bottom {  
+        top: 40%;
+    }
+
+    /* ----- About Page Styles ------ */
 
     .right-image {
         transform: translate(-15px, -15px);
@@ -772,16 +791,14 @@ body{
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
-    /* Your styles for extra large devices */
+    
+    /* ----- Landing Page Styles ------ */
+
     #landing-page{
         background-color:var(--primary-blue);
     }
 
-    #svg-container-bottom {  
-        top: 40%;
-    }
-
-    #profile-pic-container {
+    #landing-pic-container {
         width: 180px; 
         height: 180px;
     }
@@ -796,11 +813,15 @@ body{
         height: 60px; 
     }
 
+    #svg-container-bottom {  
+        top: 40%;
+    }
+
 }
 
 /* XXL devices (very large desktops, 1400px and up) */
 @media (min-width: 1400px) { 
-    /* Your styles for XXL devices */
+    
     #landing-page{
         background-color: var(--primary-blue);
     }
