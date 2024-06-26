@@ -492,6 +492,145 @@ body{
     margin: 40px auto;
 }
 
+/* ----- Rare Earth Page Styles ------ */
+
+#rare-earths-page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#rare-earths-content {
+    width: 70%;
+}
+
+#rare-earths-content h2{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-blue);
+    font-size: 3vw;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+
+/* ----- Services Page Styles ------ */
+
+#services-page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: var(--primary-blue);
+}
+
+#services-content {
+    width: 70%;
+}
+
+#services-content h2{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-white);
+    font-size: 3vw;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+/* ----- Contact Page Styles ------ */
+
+#contact-page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#contact-content {
+    width: 70%;
+}
+
+#contact-content h2{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-blue);
+    font-size: 3vw;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+#contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+#contact-title h3 {
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-blue);
+    font-size: 2.5vw;
+    margin-bottom: 5px;
+}
+
+#contact-title hr {
+    border: none; 
+    width: 120px;
+    height: 5px;
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:0;
+}
+
+.contact-inputs {
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    width: 400px; 
+    height: 50px;
+    border: 2px var(--primary-blue) solid; 
+    outline: none; 
+    padding-left: 25px; 
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+#contact-form textarea {
+    height:140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px var(--primary-orange) solid;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9
+}
+
+#contact-form button {
+    font-family: "Karla", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none; 
+    border-radius: 50px;
+    background-color: var(--primary-blue);
+    cursor: pointer;
+}
+
+#contact-form button img {
+    height: 15px
+}
 
 /* ----- Responsive Settings ------ */
 
@@ -816,7 +955,6 @@ body{
     #svg-container-bottom {  
         top: 40%;
     }
-
 }
 
 /* XXL devices (very large desktops, 1400px and up) */
