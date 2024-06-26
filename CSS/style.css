@@ -588,6 +588,41 @@ body{
         border-radius: 20px;
         left:0;
     }    
+
+    #key-staff-content h2{
+        font-size: 6vw;
+        margin-bottom: 0px;
+    }
+
+    #key-staff-container h3 {
+        font-size: 4vw;
+        margin-bottom: 10px;
+    }
+
+    #key-staff-container br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 20%;
+    }
+
+    #key-staff-container p {
+        font-size: 2vw;
+    }
+
+    .staff-photo-container {
+        float: none;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .staff-photo-container img {
+        width: 30%;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
