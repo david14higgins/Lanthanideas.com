@@ -82,8 +82,13 @@
 }
 
 .contact-form button:hover {
-    transform: scale(1.05); /* Enlarge button */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 2px solid var(--primary-orange);
+}
+
+.contact-form button:active {
+    transform: scale(0.95); 
 }
 
 /* ----- Responsive Settings ------ */
