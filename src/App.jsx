@@ -10,6 +10,7 @@ import ContactPage from './components/ContactPage/ContactPage'
 function App() {
   return (
     <div className="global">
+      <title>Lanthanideas</title>
       <Navbar />
       <LandingPage />
       <AboutPage />
