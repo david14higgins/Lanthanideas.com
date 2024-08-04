@@ -1,6 +1,7 @@
 import React from 'react'
 import './ContactForm.css'
 import Swal from 'sweetalert2'
+import RightArrow from "../../assets/images/Arrow-Right-Icon.png"
 
 const ContactForm = () => {
 
@@ -31,26 +32,19 @@ const ContactForm = () => {
         }
     };
 
-
     return (
-        <section className="contact">
-            <form onSubmit={onSubmit}>
-                <h3>Contact Form</h3>
-                <div className="input-box">
-                    <label>Full Name</label>
-                    <input type="text" className="field" placeholder="Enter your name" name="name" requried />
-                </div>
-                <div className="input-box">
-                    <label>Email Address</label>
-                    <input type="email" className="field" placeholder="Enter your email address" name="email" requried />
-                </div>
-                <div className="input-box">
-                    <label>Your Message</label>
-                    <textarea name="message" className="field message" placeholder="Enter your message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
+        <div className="contact">
+            <form className="contact-form" onSubmit={onSubmit}>
+            <div className="contact-title">
+                <h3>Get in touch</h3>
+                <hr/>
+            </div>
+                <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required/>
+                <input type="email" name="email" placeholder="Your Email" className="contact-inputs" required/>
+                <textarea name="message" placeholder="Your Message" className="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src={RightArrow}/></button>
             </form>
-        </section>
+        </div>
   )
 }
 
