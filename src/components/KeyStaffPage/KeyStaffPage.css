@@ -1,0 +1,146 @@
+@import '../../variables.css';
+
+
+.key-staff-page{
+    background-color: var(--primary-blue);
+}
+
+.key-staff-content h2{
+    color: var(--primary-white);
+}
+
+.key-staff-content h3{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-white);
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.staff-photo-container {
+    width: 20%;
+}
+
+.staff-photo-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ian-photo-container {
+    float:left;
+    margin-right: 20px
+}
+
+.dave-photo-container {
+    float: right;
+    margin-left: 20px;
+}
+
+.key-staff-content p {
+    font-family: "Karla", sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: var(--primary-white);
+    margin:0;
+}
+
+.key-staff-content hr {
+    border: 1px solid white;
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* ----- Responsive Settings ------ */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px) { 
+    .key-staff-content h3 {
+        font-size: 6vw;
+        margin-bottom: 40px;
+    }
+
+    .key-staff-content br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 60%;
+    }
+
+    .key-staff-content p {
+        font-size: 3vw;
+    }
+
+    .staff-photo-container {
+        width: 40%;
+    }
+
+    .ian-photo-container {
+        margin-right: 20px
+    }
+    
+    .dave-photo-container {
+        margin-left: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .key-staff-content h3{
+        font-size: 4vw;
+        margin-bottom: 40px;
+    }
+
+    .key-staff-content p {
+        font-size: 1.6vw;
+    }
+
+    .staff-photo-container {
+        width: 25%;
+    }
+
+    .ian-photo-container {
+        margin-right: 15px
+    }
+    
+    .dave-photo-container {
+        margin-left: 15px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .key-staff-content h3{
+        font-size: 4vw;
+        margin-bottom: 40px;
+    }
+
+    .key-staff-content p {
+        font-size: 1.4vw;
+    }
+
+    .staff-photo-container {
+        width: 25%;
+    }
+
+    .ian-photo-container {
+        margin-right: 15px
+    }
+    
+    .dave-photo-container {
+        margin-left: 15px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .key-staff-content h3{
+        font-size: 4vw;
+        margin-bottom: 40px;
+    }
+
+    .key-staff-content p {
+        font-size: 1.2vw;
+    }
+}

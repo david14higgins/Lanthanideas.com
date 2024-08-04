@@ -1,0 +1,249 @@
+@import '../../variables.css';
+
+.landing-page{
+    margin: 0; 
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.landing-content {
+    padding: 0;
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    margin: auto; 
+    z-index: 1;
+}
+
+.landing-content h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 6vw;
+    color: var(--primary-white);
+    margin: 0; 
+    display: inline-block;
+    width: fit-content; 
+    /* Uncomment for loading animation
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+    transform: translateY(100px);*/
+}
+
+
+.landing-content h2 {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: var(--primary-white); 
+    margin: 0;
+    width: fit-content;
+    /* Uncomment for loading animation
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    opacity: 0;
+    transform: translateY(100px);*/
+}
+
+.coral-highlight {
+    color: var(--primary-orange);
+}
+
+.landing-pic-container {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 40px auto;
+    /* Uncomment for loading animation
+    transform: translateY(50px);
+    opacity: 0;*/
+}
+
+.landing-pic-container img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.learn-more-btn-container {
+    width: 200px;
+    height: 60px; 
+    position: relative;
+    margin: 0 auto;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+    /* Uncomment for loading animation
+    opacity: 0;*/
+  }
+
+.learn-more-btn-container a {
+    text-decoration: none;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block; 
+    padding: 20px 0; 
+    text-align: center; 
+    text-decoration: none; 
+    width: 100%;
+}
+
+.learn-more-btn-container:hover{
+    box-shadow: inset 200px 0 0 0 var(--primary-white);
+    
+}
+
+.learn-more-btn-container:hover a {
+    color: var(--primary-blue);
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Initial size */
+    }
+    50% {
+        transform: scale(1.1); /* Enlarged size */
+    }
+    100% {
+        transform: scale(1); /* Back to initial size */
+    }
+}
+
+@keyframes rotateInfinite {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----- Responsive Settings ------ */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px) { 
+    .landing-page{
+        background-color:var(--primary-blue);
+    }
+
+    .landing-content {
+        width: 75%;
+    }
+
+    .landing-content h1 {
+        font-size: 12vw;
+        line-height: 1.1;
+    }
+
+    .landing-content h2 {
+        font-size: 3vw;
+        font-weight: 200;
+    }
+
+    .landing-pic-container {
+        width: 160px; 
+        height: 160px;
+    }
+
+    .learn-more-btn-container {
+        width: 160px;
+        height: 50px; 
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .landing-page{
+        background-color:var(--primary-blue);
+    }
+
+    .navbar-links li a {
+        font-size: 18px;
+        padding: .5rem 0.5rem;
+    }
+
+    .landing-pic-container {
+        width: 160px; 
+        height: 160px;
+    }
+
+    .learn-more-btn-container {
+        width: 160px;
+        height: 60px; 
+    }
+
+    .learn-more-btn-container {
+        width: 160px;
+        height: 50px; 
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {     
+    .landing-page{
+        background-color:var(--primary-blue);
+    }
+
+    .navbar-links li a {
+        font-size: 22px;
+        padding: 0.5rem 0.75rem
+    }
+
+    .landing-pic-container {
+        width: 180px; 
+        height: 180px;
+    }
+
+    .learn-more-btn-container {
+        width: 180px;
+        height: 60px; 
+    }
+
+    .learn-more-btn-container {
+        width: 180px;
+        height: 60px; 
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .landing-page{
+        background-color:var(--primary-blue);
+    }
+
+    .landing-pic-container {
+        width: 180px; 
+        height: 180px;
+    }
+
+    .learn-more-btn-container {
+        width: 180px;
+        height: 60px; 
+    }
+
+    .learn-more-btn-container {
+        width: 180px;
+        height: 60px; 
+    }
+}
+
+/* XXL devices (very large desktops, 1400px and up) */
+@media (min-width: 1400px) {   
+    .landing-page{
+        background-color: var(--primary-blue);
+    }
+}

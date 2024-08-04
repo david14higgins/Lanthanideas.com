@@ -1,0 +1,75 @@
+@import '../variables.css';
+
+/* Generic page rules for all but the landing page (and maybe the contact page) */
+
+.page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    width: 70%;
+}
+
+.content h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 4vw;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+
+/* ----- Responsive Settings ------ */
+
+@media (max-width: 767.98px) { 
+    .content {
+        width: 80%;
+    }
+    
+    .content h2{
+        font-size: 11vw;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .content {
+        width: 90%;
+    }
+
+    .content h2 {
+        font-size: 6vw;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .content {
+        width: 80%;
+    }
+
+    .content h2{
+        font-size: 6vw;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .content {
+        width: 80%;
+    }
+
+    .content h2{
+        font-size: 6vw;
+        margin-bottom: 50px;
+    }
+}
