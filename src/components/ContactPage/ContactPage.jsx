@@ -7,7 +7,7 @@ import ContactForm from './ContactForm'
 const ContactPage = () => {
   return (
     <div className="page contact-page">
-        <div className="content rare-earths-content">
+        <div className="content contact-content">
             <h2>Contact</h2>
             <ContactForm />
         </div>

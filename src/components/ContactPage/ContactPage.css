@@ -1,5 +1,15 @@
 @import '../../variables.css';
 
+.contact-page {
+    height: 100vh;
+}
+
+.contact-content {
+    }
+
+.contact-content h2{
+    color: var(--primary-blue); 
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 
