@@ -1,68 +1,77 @@
 @import '../../variables.css';
 
 .contact {
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    background: #826afb;
+    justify-content: space-evenly;
 }
 
-form {
-    max-width: 600px;
-    width: 100%;
-    background: #fff;
-    padding: 25px 25px 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0 .1);
-    color: #333;
-    margin: 25px;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
 
-form h3 {
-    font-size: 30px;
-    text-align: center;
+.contact-title h3 {
     font-family: "Outfit", sans-serif;
+    color: var(--primary-blue);
+    font-size: 2.5vw;
+    margin-bottom: 5px;
 }
 
-form .input-box {
-    margin-top: 20px;
+.contact-title hr {
+    border: none; 
+    width: 120px;
+    height: 5px;
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:0;
 }
 
-.input-box .field{
-    width: 100%;
-    margin: 8px 0 auto;
+.contact-inputs {
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    width: 400px; 
     height: 50px;
-    background: transparent;
-    border: 2px solid #ddd;
-    outline: none;
-    border-radius: 6px;
-    padding: 15px;
-    font-family: "Karla", sans-serif; 
-    font-size: 16px;
-    color: #333;
+    border: 2px var(--primary-blue) solid; 
+    outline: none; 
+    padding-left: 25px; 
+    font-weight: 500;
+    border-radius: 50px;
 }
 
-.input-box .message {
-    height: 200px;
+.contact-form textarea {
+    height:140px;
+    padding-top: 15px;
+    border-radius: 20px;
     resize: none;
 }
 
-form button {
-    width: 100%;
-    height: 55px;
-    background: #826afb;
-    border: none; 
-    border-radius: 6px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0 .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    margin-top: 25px;
-    transition: .5s;
+.contact-inputs:focus {
+    border: 2px var(--primary-orange) solid;
 }
 
-form button:hover {
-    background: #624ec6;
+.contact-inputs::placeholder {
+    color: #a9a9a9
+}
+
+.contact-form button {
+    font-family: "Karla", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none; 
+    border-radius: 50px;
+    background-color: var(--primary-blue);
+    cursor: pointer;
+}
+
+.contact-form button img {
+    height: 15px
 }
