@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ContactForm.css'
 import Swal from 'sweetalert2'
 import RightArrow from "../../assets/images/Arrow-Right-Icon.png"
 
 const ContactForm = () => {
+    //Form state 
+    // const [formData, setFormData] = useState({
+    //   name: "",
+    //   email: "", 
+    //   message: ""
+    // })
+
+    // const handleInputChange = (event) => {
+    //   const {name, value} = event.target; 
+    //   setFormData({
+    //     ...formData, 
+    //     [name] : value
+    //   })
+    // };
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -29,20 +43,27 @@ const ContactForm = () => {
             text: "Message sent successfully",
             icon: "success"
           })
+
+          //Reset form data 
+          // setFormData({
+          //   name: "",
+          //   email: "",
+          //   message: ""
+          // })
         }
     };
 
     return (
         <div className="contact-container">
             <form className="contact-form" onSubmit={onSubmit}>
-            <div className="contact-title">
-                <h3>Get in touch</h3>
-                <hr/>
-            </div>
-                <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required/>
-                <input type="email" name="email" placeholder="Your Email" className="contact-inputs" required/>
-                <textarea name="message" placeholder="Your Message" className="contact-inputs" required></textarea>
-                <button type="submit">Submit <img src={RightArrow}/></button>
+              <div className="contact-title">
+                  <h3>Get in touch</h3>
+                  <hr/>
+              </div>
+              <input type="text" name="name" placeholder="Your Name" className="contact-inputs"  required/>
+              <input type="email" name="email" placeholder="Your Email" className="contact-inputs"  required/>
+              <textarea name="message" placeholder="Your Message" className="contact-inputs" required></textarea>
+              <button type="submit">Submit <img src={RightArrow}/></button>
             </form>
         </div>
   )

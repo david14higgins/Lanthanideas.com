@@ -5,6 +5,10 @@
     background-color: var(--primary-blue);
 }
 
+.key-staff-content{
+    margin-bottom: 40px;
+}
+
 .key-staff-content h2{
     color: var(--primary-white);
 }
