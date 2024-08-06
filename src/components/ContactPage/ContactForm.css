@@ -1,5 +1,9 @@
 @import '../../variables.css';
 
+.swal2-popup {
+    font-family: 'Karla', sans-serif;
+}
+
 .contact-container {
     margin: 0 auto;
     width: 450px;
