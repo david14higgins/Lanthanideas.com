@@ -5,24 +5,120 @@
     color: var(--primary-blue); 
 }
 
+.rare-earths-content{
+    margin-bottom: 40px;
+}
+
+.rare-earths-content h3{
+    font-family: "Outfit", sans-serif;
+    color: var(--primary-blue);
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.rare-earths-content p {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color: var(--primary-blue);
+    margin:0;
+}
+
+.quote-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p.quote{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3vw;
+    text-align: justify
+}
+
+.quote-caption-container {
+    width: 80%;
+    margin-left: auto;
+}
+
+p.quote-caption {
+    text-align: right;
+    font-weight: 700;
+}
+
+
+/* ----- Responsive Settings ------ */
 
 /* Extra small devices (portrait phones, less than 576px) */
-
 @media (max-width: 767.98px) { 
-    
+    .rare-earths-content h3 {
+        font-size: 6vw;
+        margin-bottom: 40px;
+    }
+
+    .rare-earths-content br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 60%;
+    }
+
+    .rare-earths-content p {
+        font-size: 3vw;
+    }
+
+    p.quote{
+        font-size: 4vw;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    
+    .rare-earths-content h3{
+        font-size: 4vw;
+        margin-bottom: 40px;
+    }
+
+    .rare-earths-content p {
+        font-size: 1.6vw;
+    }
+
+    p.quote{
+        font-size: 2vw;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .rare-earths-content h3{
+        font-size: 4vw;
+        margin-bottom: 40px;
+    }
 
+    .rare-earths-content p {
+        font-size: 1.4vw;
+    }
+
+    p.quote{
+        font-size: 1.8vw;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
-    
+    .rare-earths-content h3{
+        font-size: 4vw;
+        margin-bottom: 40px;
+    }
+
+    .rare-earths-content p {
+        font-size: 1.2vw;
+    }
+
+    p.quote{
+        font-size: 1.6vw;
+    }
 }
