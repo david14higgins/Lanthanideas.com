@@ -6,23 +6,23 @@ const Table = () => {
     <table>
         <tr>
             <th className="process-header">Process</th>
-            <th className="chemical-header">La</th>
-            <th className="chemical-header">Ce</th>
-            <th className="chemical-header">Pr</th>
-            <th className="chemical-header">Nd</th>
-            <th className="chemical-header">Pm</th>
-            <th className="chemical-header">Sm</th>
-            <th className="chemical-header">Eu</th>
-            <th className="chemical-header">Gd</th>
-            <th className="chemical-header">Tb</th>
-            <th className="chemical-header">Dy</th>
-            <th className="chemical-header">Ho</th>
-            <th className="chemical-header">Er</th>
-            <th className="chemical-header">Tm</th>
-            <th className="chemical-header">Yb</th>
-            <th className="chemical-header">Lu</th>
-            <th className="chemical-header">Y</th>
-            <th className="chemical-header">Sc</th>
+            <th>La</th>
+            <th>Ce</th>
+            <th>Pr</th>
+            <th>Nd</th>
+            <th>Pm</th>
+            <th>Sm</th>
+            <th>Eu</th>
+            <th>Gd</th>
+            <th>Tb</th>
+            <th>Dy</th>
+            <th>Ho</th>
+            <th>Er</th>
+            <th>Tm</th>
+            <th>Yb</th>
+            <th>Lu</th>
+            <th>Y</th>
+            <th>Sc</th>
         </tr>
         <tr>
             <td className="process-name">Molten Salt Electrolysis - metal</td><td className="green-cell"></td>
