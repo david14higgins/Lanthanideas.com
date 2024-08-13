@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Page.css'
 import './RareEarthsPage.css'
+import rareEarthStones from '../../assets/images/Rare-Earth-Stones.png'
+import supplyChain from '../../assets/images/Supply-Chain.png'
 
 const RareEarthsPage = () => {
   return (
@@ -17,6 +19,36 @@ const RareEarthsPage = () => {
             </div>
             <br/>
             <p>For some, the similarity in chemical properties between rare earth elements make them uninteresting. The relatively high stability of rare earth oxides and common salts may help to reinforce such a view. However, others have risen to the challenges of recovering rare earths from their ores, separating mixed rare earth feeds into individual elements and subsequent processing into chemicals, metals and alloys for industrial applications. As society evolves towards a more circular economy, new techniques are being developed to recover rare earths as by-products of other industrial processes or from end of life components. The chemistry of the rare earths is anything but boring.</p>
+            
+            <h3>Applications of Rare Earths</h3>
+            <div className="icon-container rare-earth-stones-container">
+                <img src={rareEarthStones}/>
+            </div>
+
+            <p>Early applications of rare earths were generally based on unseparated or part-separated elements. These included lighter flints, glass polishing powders and colouring agents for welding goggles. As techniques for separating and purifying rare earths became more efficient, higher tech applications, such as phosphors for lighting and colour televisions, became established.</p>
+            <br/>
+            <p>In addition to lighter flints, early metallurgical applications for rare earths were based mainly on processing aids for steel production and on additives to modify mechanical properties of complex structural alloy systems. Many of these applications are still used today.</p>
+            <br/>
+            <p>Other alloy systems include magnetostrictive, magneto-optic and magneto-calorific materials, all typically based on alloys of one or more rare earth, transition metal and other elements. Far and away the main metallurgical application for rare earths today is in the permanent magnet industry. The development of commercial markets, initially based on samarium cobalt and now on the significantly larger neodymium iron boron system, has transformed the rare earth supply chain. </p>
+            <br/>
+            <p>In addition to neodymium, the main rare earth elements used in neodymium iron boron magnets are praseodymium, which can partially substitute for neodymium in many magnet formulations, together with terbium and dysprosium, which both improve resistance to demagnetisation and increase operating temperature. Demand for these four elements for magnet applications is now the key driver for the entire rare earth industry.</p>
+            <br/>
+            <p>Rare earth permanent magnets find use in computer drives, sensors, chemical couplings and various electrical motors. Significant growth in demand is projected, in particular for electric vehicle and wind power applications. The technical advantages presented by rare earth permanent magnets over other systems has resulted in the key elements becoming highly strategic, with significant imbalance and vulnerability in the current supply chain.</p>
+        
+            <h3>Rare Earth Supply Chain</h3>
+            <div className="icon-container supply-chain-container">
+                <img src={supplyChain}/>
+            </div>
+
+            <p>With huge focus and support from the government, China is far and away the main  global supply of rare earth-based materials such as neodymium iron boron magnets. The geological advantage held by China, together with centrally planned long term strategies and significant state investment have combined to establish China’s dominance, in particular for supply of rare earth permanent magnets.</p>
+            <br/>
+            <p>High quality magnets are readily available today from a number of Chinese companies offering rapid response times, excellent technical support and customer focus, all at highly competitive terms.</p>
+            <br/>
+            <p>All this has come at a cost. China now faces huge legacy issues due to a failure over many years to enforce environmental regulations in their processing industries.</p>
+            <br/>
+            <p>In addition, the strategic vulnerability of overdependence on a single source for critical materials has now been recognised worldwide. Japan, USA, India and the European Union are all at various stages of enacting policies to support domestic production of rare earths and / or added value downstream processing. Other jurisdictions are now following suit. However, the challenges of establishing competitive supply, in the face of stiff competition from Chinese companies, are immense.</p>
+            <br/>
+            <p>Lanthanideas’ staff have decades of experience working within the rare earth supply chain and actively track progress of global projects at various stages of development. With our industry knowledge we are well placed to offer support and advice, either to ventures working in the supply chain, researchers seeking to develop new technologies or investors wishing to understand more about the industry dynamics.</p>
         </div>
     </div>
   )
