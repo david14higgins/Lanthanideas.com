@@ -7,7 +7,7 @@ import './KeyStaffPage.css'
 
 const KeyStaffPage = () => {
   return (
-    <div className="page key-staff-page">
+    <div id="key-staff-page" className="page">
         <div className="content key-staff-content">
             <h2>Key Staff</h2>
             <h3>Ian Higgins</h3>

@@ -41,13 +41,22 @@
     font-size: 24px;
     font-weight: 500;
     color: #4654A3; 
-    padding: 0.5rem 1rem; 
+    padding: 0 20px; 
     display: block;
     margin: auto 0;
+    position: relative;
 }
 
-.navbar-links li:hover {
-    background-color: var(--primary-orange);
+.navbar-links ul li a:hover::after{
+    content: "";
+    width: 80%;
+    height: 3px;
+    border-radius: 30px;
+    background-color: var(--primary-blue);
+    position: absolute;
+    bottom: -2px;
+    left: 10%;
+    transition: 0.2s ease-in-out;
 }
 
 .toggle-button {
@@ -69,6 +78,8 @@
     background-color: var(--primary-blue);
     border-radius: 10px;
 } 
+
+
 
 /*Responsive nav bar for all small devices */
 @media (max-width: 767.98px) {
@@ -102,4 +113,29 @@
     .navbar-links.active {
         display: flex;
     }
+
+    .navbar-links ul li a:hover::after{
+        opacity: 0;
+    }
 } 
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navbar-links li a {
+        font-size: 18px;
+        padding: .5rem 0.5rem;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {     
+    .navbar-links li a {
+        font-size: 22px;
+        padding: 0.5rem 0.75rem
+    }
+}
+

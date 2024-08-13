@@ -8,7 +8,7 @@ import './AboutPage.css'
 
 const AboutPage = () => {
   return (
-    <div className="page about-page">
+    <div id="about-page" className="page">
         <div className="content about-content">
             <h2>About</h2>
             <div className="about-boxes-container">

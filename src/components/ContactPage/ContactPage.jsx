@@ -7,7 +7,7 @@ import BackgroundLogo from '../Background/BackgroundLogo'
 
 const ContactPage = () => {
   return (
-    <div className="page contact-page">
+    <div id="contact-page" className="page">
         <div className="content contact-content">
             <h2>Contact</h2>
             <ContactForm />

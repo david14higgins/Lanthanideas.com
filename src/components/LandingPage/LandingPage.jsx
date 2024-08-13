@@ -5,7 +5,7 @@ import BackgroundLogo from '../Background/BackgroundLogo'
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
+    <div id="landing-page">
         <div className="landing-content">
             <h1>Welcome to Lanthanideas</h1>
             <h2>By Ian Higgins, <span className="coral-highlight">Consultant</span> to the Rare Earth Industry</h2>

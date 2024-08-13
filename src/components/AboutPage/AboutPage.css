@@ -1,6 +1,6 @@
 @import '../../variables.css';
 
-.about-page{
+#about-page{
     background-color: var(--primary-white);
 }
 

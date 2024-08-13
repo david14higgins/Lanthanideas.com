@@ -1,6 +1,6 @@
 @import '../../variables.css';
 
-.contact-page {
+#contact-page {
     height: 100vh;
     overflow: hidden;
 }

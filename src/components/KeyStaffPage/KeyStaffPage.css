@@ -1,7 +1,7 @@
 @import '../../variables.css';
 
 
-.key-staff-page{
+#key-staff-page{
     background-color: var(--primary-blue);
 }
 
