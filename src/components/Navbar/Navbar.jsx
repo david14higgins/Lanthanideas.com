@@ -1,19 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../../assets/images/Lanthanideas-Logo.png"
 import "./Navbar.css"
 
 const Navbar = () => {
+
+    const [showMenu, setShowMenu] = useState(false)
+
+    const toggleMenu = () => {
+        setShowMenu(prevState => !prevState)
+        console.log(prevState)
+    }
+
   return (
     <nav className="navbar">
         <div className="logo">
             <img src={logo}/>
         </div>
-        <a href="#" className="toggle-button">
+        <div className="toggle-button" onClick={toggleMenu}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
-        </a>
-        <div className="navbar-links">
+        </div>
+        <div className={`navbar-links ${showMenu ? "active" : ""}`}>
             <ul>
                 <li id="home-link"><a href="#landing-page">Home</a></li>
                 <li id="about-link"><a href="#about-page">About</a></li>
