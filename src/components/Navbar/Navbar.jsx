@@ -8,7 +8,10 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setShowMenu(prevState => !prevState)
-        console.log(prevState)
+    }
+
+    const hideMenu = () => {
+        setShowMenu(false)
     }
 
   return (
@@ -23,11 +26,11 @@ const Navbar = () => {
         </div>
         <div className={`navbar-links ${showMenu ? "active" : ""}`}>
             <ul>
-                <li id="home-link"><a href="#landing-page">Home</a></li>
-                <li id="about-link"><a href="#about-page">About</a></li>
-                <li id="rare-earth-link"><a href="#rare-earths-page">Rare Earths</a></li>
-                <li id="service-link"><a href="#services-page">Service</a></li>
-                <li id="contact-link"><a href="#contact-page">Contact</a></li>
+                <li id="home-link"><a href="#landing-page" onClick={hideMenu}>Home</a></li>
+                <li id="about-link"><a href="#about-page" onClick={hideMenu}>About</a></li>
+                <li id="rare-earth-link"><a href="#rare-earths-page" onClick={hideMenu}>Rare Earths</a></li>
+                <li id="service-link"><a href="#services-page" onClick={hideMenu}>Service</a></li>
+                <li id="contact-link"><a href="#contact-page" onClick={hideMenu}>Contact</a></li>
             </ul>
         </div>
     </nav>
