@@ -1,0 +1,40 @@
+@import '../../variables.css';
+
+
+
+.green-cell {
+    background-color: #47D359;
+}
+
+table, th, td {
+    border: 1px solid var(--primary-blue);
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--primary-blue);
+}
+
+.process-header {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-blue);
+}
+
+td {
+    width: 30px;
+}
+
+.process-name {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--primary-blue);
+    width: fit-content;
+    padding: 0 5px;
+}

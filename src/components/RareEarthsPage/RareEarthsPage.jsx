@@ -3,6 +3,8 @@ import '../Page.css'
 import './RareEarthsPage.css'
 import rareEarthStones from '../../assets/images/Rare-Earth-Stones.png'
 import supplyChain from '../../assets/images/Supply-Chain.png'
+import Table from './Table'
+
 
 const RareEarthsPage = () => {
   return (
@@ -49,6 +51,12 @@ const RareEarthsPage = () => {
             <p>In addition, the strategic vulnerability of overdependence on a single source for critical materials has now been recognised worldwide. Japan, USA, India and the European Union are all at various stages of enacting policies to support domestic production of rare earths and / or added value downstream processing. Other jurisdictions are now following suit. However, the challenges of establishing competitive supply, in the face of stiff competition from Chinese companies, are immense.</p>
             <br/>
             <p>Lanthanideas’ staff have decades of experience working within the rare earth supply chain and actively track progress of global projects at various stages of development. With our industry knowledge we are well placed to offer support and advice, either to ventures working in the supply chain, researchers seeking to develop new technologies or investors wishing to understand more about the industry dynamics.</p>
+        
+            <h3>Rare Earth Metal Production</h3>
+            <p>A variety of processes have been proposed for producing rare earth metals. However, only a limited few have become established for commercial production. The main metal making processes are shown in the following table:</p>
+            <br/>
+            <Table/>
+            
         </div>
     </div>
   )
