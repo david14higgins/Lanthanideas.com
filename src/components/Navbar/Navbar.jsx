@@ -25,8 +25,8 @@ const Navbar = () => {
             <ul>
                 <li id="home-link"><a href="#landing-page">Home</a></li>
                 <li id="about-link"><a href="#about-page">About</a></li>
-                <li id="rare-earth-link"><a href="#">Rare Earths</a></li>
-                <li id="service-link"><a href="#">Service</a></li>
+                <li id="rare-earth-link"><a href="#rare-earths-page">Rare Earths</a></li>
+                <li id="service-link"><a href="#services-page">Service</a></li>
                 <li id="contact-link"><a href="#contact-page">Contact</a></li>
             </ul>
         </div>
