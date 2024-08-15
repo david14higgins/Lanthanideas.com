@@ -33,8 +33,71 @@ td {
 .process-name {
     font-family: "Karla", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     color: var(--primary-blue);
     width: fit-content;
     padding: 0 5px;
+}
+
+/* ----- Responsive Settings ------ */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px) { 
+    th, .process-header {
+        font-size: 2vw;
+    }
+
+    .process-name {
+        font-size: 2vw;
+    }
+
+    td {
+        width: 10px;
+        height: 30px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    th, .process-header {
+        font-size: 14px;
+    }
+
+    .process-name {
+        font-size: 11px;
+    }
+
+    td {
+        width: 18px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    th, .process-header {
+        font-size: 16px;
+    }
+
+    .process-name {
+        font-size: 16px;
+    }
+
+    td {
+        width: 22px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    th, .process-header {
+        font-size: 20px;
+    }
+
+    .process-name {
+        font-size: 18px;
+    }
+
+    td {
+        width: 25px;
+    }
 }
