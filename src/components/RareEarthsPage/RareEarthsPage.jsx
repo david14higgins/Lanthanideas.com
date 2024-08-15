@@ -56,6 +56,37 @@ const RareEarthsPage = () => {
             <p>A variety of processes have been proposed for producing rare earth metals. However, only a limited few have become established for commercial production. The main metal making processes are shown in the following table:</p>
             <br/>
             <Table/>
+
+            <div className="process-container">
+              <div className="process">
+                <h4>Molten Salt Electrolysis</h4>
+                <p>Molten salt electrolysis is the standard production route for the light rare earth metals, lanthanum, cerium, praseodymium, neodymium and NdPr master alloy. The core process entails dissolution of rare earth oxides in a molten salt bath, splitting RE-O chemical bonds via application of a DC electrical current and reduction of the resulting RE3+ ion at the cathode. Traditionally, a high level of operator experience and knowhow has been required to maintain the process in control and produce metal of appropriate quality for subsequent magnet production.</p>
+                <br/>
+                <p>The higher melting points of intermediate and heavy rare earths, such as gadolinium, terbium and dysprosium, means that production of pure elements is not possible. Consequently, the process has been adapted to allow for commercial production of rare earth – iron binary eutectic alloys, suitable raw materials for production of iron-based magnet alloys. However, in modern magnet production, additions of terbium and/or dysprosium are routinely made via a post-magnet forming process, grain boundary diffusion. For such processing, the rare earth must be in the form of a salt or a pure metal. Binary alloys are not suitable.</p>
+              </div>
+
+              <div className="process">
+                <h4>Vacuum Reduction and Remelting</h4>
+                <p>Heavy rare earth metals such as terbium and dysprosium are commercially produced via a two-stage process of vacuum reduction and remelting. This entails reacting rare earth fluorides with calcium at elevated temperatures to produce impure rare earth metals and calcium fluoride by-product. The second stage involves remelting the metal under a high vacuum to remove volatile metals such as residual calcium.</p>
+                <br/>
+                <p>The process is highly efficient in terms of yield. However, traditional production has been based on small scale batch processing and is both labour-intensive and with poor furnace utilisation. </p>
+                <br/>
+                <img src={rareEarthStones} style={{width: "300px", paddingLeft: "80px"}}/>
+              </div>
+
+              <div className="process">
+                <h4>Direct Sublimation</h4>
+                <p>For many rare earth elements, direct chemical reduction of oxides is thermodynamically unfavourable due to the large negative Gibbs Free Energies of oxide formation. However, selected rare earth metals readily sublime and, in such instances, oxide reduction is possible due to application of Le Chatellier’s principle, Namely</p>
+                <br/>
+                <p>“If a dynamic equilibrium is disturbed by changing the conditions, the position of equilibrium shifts to counteract the change to reestablish an equilibrium.”</p>
+                <br/>
+                <p>For rare earths such as samarium, the metallic product of oxide reduction readily sublimes under vacuum leading to a drive towards the right-hand side for the reaction</p>
+                <br/>
+                <p>Sm2O3(s) + 2La(l) ↔ 2Sm(g) + La2O3(s)</p>
+                <br/>
+                <p>This reaction forms the basis for commercial production of samarium metal as used  for samarium cobalt magnets and other metallurgical applications.</p>
+              </div>
+            </div>
             
         </div>
     </div>
