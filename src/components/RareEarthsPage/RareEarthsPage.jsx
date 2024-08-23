@@ -80,15 +80,15 @@ const RareEarthsPage = () => {
 
               <div className="process">
                 <h4>Direct Sublimation</h4>
-                <p>For many rare earth elements, direct chemical reduction of oxides is thermodynamically unfavourable due to the large negative Gibbs Free Energies of oxide formation. However, selected rare earth metals readily sublime and, in such instances, oxide reduction is possible due to application of Le Chatellier’s principle, Namely</p>
+                <p>For many rare earth elements, the direct chemical reduction of oxides is thermodynamically unfavourable due to the highly negative Gibbs Free Energies associated with oxide formation. Despite this, certain rare earth metals possess a unique ability to readily sublime, which enables oxide reduction through the application of Le Chatelier’s principle. This principle can be summarized as follows:</p>
                 <br/>
-                <p>“If a dynamic equilibrium is disturbed by changing the conditions, the position of equilibrium shifts to counteract the change to reestablish an equilibrium.”</p>
+                <p>“If a dynamic equilibrium is disturbed by changing the conditions, the position of equilibrium shifts to counteract the change, thereby reestablishing equilibrium.”</p>
                 <br/>
-                <p>For rare earths such as samarium, the metallic product of oxide reduction readily sublimes under vacuum leading to a drive towards the right-hand side for the reaction</p>
+                <p>In the case of rare earth elements like samarium, the metallic product formed from oxide reduction easily sublimes under vacuum conditions, thereby driving the reaction towards the right-hand side:</p>
                 <br/>
                 <p>Sm2O3(s) + 2La(l) ↔ 2Sm(g) + La2O3(s)</p>
                 <br/>
-                <p>This reaction forms the basis for commercial production of samarium metal as used  for samarium cobalt magnets and other metallurgical applications.</p>
+                <p>This reaction is the foundation for the commercial production of samarium metal, which is extensively used in the manufacturing of samarium cobalt magnets and various metallurgical applications.</p>
               </div>
             </div>
             
