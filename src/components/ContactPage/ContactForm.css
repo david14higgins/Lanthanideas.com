@@ -22,7 +22,7 @@
 
 .contact-title h3 {
     font-family: "Outfit", sans-serif;
-    color: var(--primary-blue);
+    color: var(--primary-white);
     font-size: 2.5vw;
     margin-bottom: 5px;
     margin-top: 0;
@@ -32,7 +32,7 @@
     border: none; 
     width: 120px;
     height: 5px;
-    background-color: var(--primary-blue);
+    background-color: var(--primary-white);
     border-radius: 10px;
     margin-bottom: 20px;
     margin-left:0;
@@ -40,15 +40,16 @@
 
 .contact-inputs {
     font-family: "Karla", sans-serif;
+    color: var(--primary-white);
     font-size: 20px; 
     width: 90%;
     height: 50px;
-    border: 2px var(--primary-blue) solid; 
+    border: 2px var(--primary-white) solid; 
     outline: none; 
     padding-left: 25px; 
     font-weight: 500;
     border-radius: 50px;
-
+    background-color: var(--primary-blue);
 }
 
 .contact-form textarea {
@@ -58,13 +59,16 @@
     resize: none;
 }
 
+.contact-inputs::placeholder {
+    color: var(--primary-white);
+    opacity: 0.7; 
+}
+
 .contact-inputs:focus {
     border: 2px var(--primary-orange) solid;
 }
 
-.contact-inputs::placeholder {
-    color: #a9a9a9
-}
+
 
 .contact-form button {
     font-family: "Karla", sans-serif;
@@ -74,7 +78,7 @@
     font-size: 16px;
     color: white;
     gap: 10px;
-    border: none; 
+    border: 2px solid var(--primary-white);; 
     border-radius: 50px;
     background-color: var(--primary-blue);
     cursor: pointer;
