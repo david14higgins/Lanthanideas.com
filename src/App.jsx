@@ -6,6 +6,7 @@ import KeyStaffPage from './components/KeyStaffPage/KeyStaffPage'
 import RareEarthsPage from './components/RareEarthsPage/RareEarthsPage'
 import ServicesPage from './components/ServicesPage/ServicesPage'
 import ContactPage from './components/ContactPage/ContactPage'
+import CollaborationsPage from './components/CollaborationsPage/CollaborationsPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <KeyStaffPage />
       <RareEarthsPage />
       <ServicesPage />
+      <CollaborationsPage />
       <ContactPage />
     </div>
   )
