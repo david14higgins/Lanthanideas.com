@@ -4,6 +4,7 @@ import './RareEarthsPage.css'
 import rareEarthStones from '../../assets/images/Rare-Earth-Stones.png'
 import supplyChain from '../../assets/images/Supply-Chain.png'
 import factory from "../../assets/images/Factory.png"
+import manufacture from "../../assets/images/Manufacture.png"
 import Table from './Table'
 
 
@@ -91,7 +92,19 @@ const RareEarthsPage = () => {
                 <p>This reaction is the foundation for the commercial production of samarium metal, which is extensively used in the manufacturing of samarium cobalt magnets and various metallurgical applications.</p>
               </div>
             </div>
-            
+
+            <h3>Rare Earth Alloy Production</h3>
+            <div className="icon-container manufacture-container">
+                <img src={manufacture}/>
+            </div>
+
+            <p>Historical rare earth alloy production was carried out using vacuum induction melting and casting. In this process, alloy constituents are melted using direct induction, typically under a partial pressure of inert gas, and cast into a static mould. Such a process generates alloys with good compositional control, low level of impurities and high melting yields. However, for alloys where the cast microstructure is important for subsequent processing, traditional casting into static moulds is not the ideal process.</p>
+            <br/>
+            <p>A key example of an alloy system where microstructural control is important is neodymium iron boron. Traditional casting results in alloys with a wide range of grain sizes, not ideal for subsequent magnet production.  Furthermore, adjustments need to be made on the alloy composition to avoid, or at least minimise, formation of free alpha iron during cooling. Such compromises mean that optimum magnetic strength cannot be achieved using traditionally cast alloy.</p>
+            <br/>
+            <p>To overcome these limitations, strip casting, a process commercially used in the steel industry since the 1960s, has been applied to produce neodymium iron boron alloys with optimum microstructures for subsequent magnet production. The process entails casting molten alloy onto a water-cooled rotating copper wheel thereby rapidly chilling the alloy to give a uniform, fine-grained microstructure with little or no free alpha iron.</p>
+            <br/>
+            <p>Another, highly niche, method of producing rare earth alloys is co-reduction, whereby a rare earth salt or oxide is simultaneously reduced, together with a transition metal salt or oxide, and combined with other elements to produce a functional alloy. One such example is the production of samarium cobalt alloy whereby samarium oxide, calcium, cobalt oxide and cobalt metal are reacted together to yield samarium cobalt together with calcium oxide as a by-product. This process has been operated commercially at LCM since the later 1990s.</p>
         </div>
     </div>
   )

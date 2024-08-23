@@ -98,8 +98,6 @@ p.quote-caption {
     padding-top: 0;
 }
 
-
-
 .factory-container {
     width: 70%;
     margin: 0 auto;
@@ -109,9 +107,12 @@ p.quote-caption {
 .factory-container img{
     width: 100%;
     margin: auto;
-
 }
 
+.manufacture-container {
+    float:left;
+    margin-right: 20px
+}
 
 /* ----- Responsive Settings ------ */
 
@@ -168,6 +169,10 @@ p.quote-caption {
         margin: 0 auto;
         margin-bottom: 0;
     }
+
+    .manufacture-container {
+        margin-right: 5px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -204,6 +209,10 @@ p.quote-caption {
 
     .rare-earths-content h4 {
         font-size: 2vw;
+    }
+
+    .manufacture-container {
+        margin-right: 5px;
     }
 }
 
@@ -242,6 +251,10 @@ p.quote-caption {
     .rare-earths-content h4 {
         font-size: 2vw;
     }
+
+    .manufacture-container {
+        margin-right: 10px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -266,5 +279,9 @@ p.quote-caption {
 
     .rare-earths-content h4 {
         font-size: 2vw;
+    }
+
+    .manufacture-container {
+        margin-right: 15px;
     }
 }
