@@ -3,6 +3,7 @@ import '../Page.css'
 import './RareEarthsPage.css'
 import rareEarthStones from '../../assets/images/Rare-Earth-Stones.png'
 import supplyChain from '../../assets/images/Supply-Chain.png'
+import factory from "../../assets/images/Factory.png"
 import Table from './Table'
 
 
@@ -65,13 +66,16 @@ const RareEarthsPage = () => {
                 <p>The higher melting points of intermediate and heavy rare earths, such as gadolinium, terbium and dysprosium, means that production of pure elements is not possible. Consequently, the process has been adapted to allow for commercial production of rare earth – iron binary eutectic alloys, suitable raw materials for production of iron-based magnet alloys. However, in modern magnet production, additions of terbium and/or dysprosium are routinely made via a post-magnet forming process, grain boundary diffusion. For such processing, the rare earth must be in the form of a salt or a pure metal. Binary alloys are not suitable.</p>
               </div>
 
-              <div className="process">
-                <h4>Vacuum Reduction and Remelting</h4>
+              <div className="process vacuum-reduction">
+                <div className="factory-container">
+                  <img src={factory}/>
+                </div>
+                <h4 className="vacuum-reduction-header">Vacuum Reduction and Remelting</h4>
                 <p>Heavy rare earth metals such as terbium and dysprosium are commercially produced via a two-stage process of vacuum reduction and remelting. This entails reacting rare earth fluorides with calcium at elevated temperatures to produce impure rare earth metals and calcium fluoride by-product. The second stage involves remelting the metal under a high vacuum to remove volatile metals such as residual calcium.</p>
                 <br/>
                 <p>The process is highly efficient in terms of yield. However, traditional production has been based on small scale batch processing and is both labour-intensive and with poor furnace utilisation. </p>
                 <br/>
-                <img src={rareEarthStones} style={{width: "300px", paddingLeft: "80px"}}/>
+              
               </div>
 
               <div className="process">

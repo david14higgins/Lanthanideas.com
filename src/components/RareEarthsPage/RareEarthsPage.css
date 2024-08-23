@@ -12,7 +12,7 @@
 .rare-earths-content h3{
     font-family: "Outfit", sans-serif;
     color: var(--primary-blue);
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -75,17 +75,41 @@ p.quote-caption {
 .rare-earths-content h4 {
     font-family: "Outfit", sans-serif;
     color: var(--primary-blue);
-    font-size: 1.2vw;
+    font-size: 2vw;
     text-align: center;
-    margin-top: 40px;
     margin-bottom: 20px;
+    margin-top: 0;
     font-weight: 700;
 }
+
 .process {
     width: 30%;
     padding: 20px;
     margin: 20px;
-    
+}
+
+.vacuum-reduction {
+    padding: 0;
+    margin-top: 30px;
+}
+
+.vacuum-reduction-header {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+.factory-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.factory-container img{
+    width: 100%;
+    margin: auto;
+
 }
 
 
@@ -124,6 +148,26 @@ p.quote-caption {
     .supply-chain-container {
         margin-left: 20px;
     }
+
+    .process-container {
+        flex-direction: column;
+    }
+
+    .process {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rare-earths-content h4 {
+        font-size: 4vw;
+    }
+
+    .factory-container {
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -151,6 +195,15 @@ p.quote-caption {
 
     .supply-chain-container {
         margin-left: 15px;
+    }
+
+    .process {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .rare-earths-content h4 {
+        font-size: 2vw;
     }
 }
 
@@ -180,6 +233,15 @@ p.quote-caption {
     .supply-chain-container {
         margin-left: 15px;
     }
+
+    .process {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .rare-earths-content h4 {
+        font-size: 2vw;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -195,5 +257,14 @@ p.quote-caption {
 
     p.quote{
         font-size: 1.6vw;
+    }
+
+    .process {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .rare-earths-content h4 {
+        font-size: 2vw;
     }
 }
