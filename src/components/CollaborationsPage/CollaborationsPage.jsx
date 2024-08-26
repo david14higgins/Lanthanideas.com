@@ -5,6 +5,12 @@ import eutectixLogo from "../../assets/images/Eutectix-Logo.jpg"
 import trafalgarLogo from "../../assets/images/Trafalgar-Logo.jpg"
 
 const CollaborationsPage = () => {
+
+  const handleClick = (destination) => {
+    window.open(destination, "_blank")
+  }
+
+
   return (
     <div id="collaborations-page" className="page">
         <div className="content collaborations-content">
@@ -12,14 +18,16 @@ const CollaborationsPage = () => {
 
 
             <div className="collaborations-container">
-              <div className="collaboration-container">
+
+              <div className="collaboration-container clickable-collaboration" onClick={() => handleClick("https://eutectix.com/")}>
                 <h3>Eutectix</h3>
-                <p>In late 2023, Lanthanideas started to work closely with the American company, Eutectix LLC https://eutectix.com/, particularly at their Tolleson, Arizona facility. This facility was previously owned by Santoku Corporation, the Japanese rare earth metal and alloy manufacturer, and is well-equipped with a highly experienced and knowledgeable staff that has been instrumental in maintaining its operations</p>
+                <p>In late 2023, Lanthanideas started to work closely with the American company, Eutectix LLC, particularly at their Tolleson, Arizona facility. This facility was previously owned by Santoku Corporation, the Japanese rare earth metal and alloy manufacturer, and is well-equipped with a highly experienced and knowledgeable staff that has been instrumental in maintaining its operations</p>
                 <p>To date, the collaboration has primarily focused on practical trials aimed at improving the vacuum reduction and remelting process for the production of rare earth metals, with ongoing efforts to refine and optimize these techniques.</p>
                 <div className="logo-container eutectix-logo-container">
                   <img src={eutectixLogo}/>
                 </div>
               </div>
+     
 
               <div className="collaboration-container">
                 <h3>Trafalgar Rare Earth Alloys</h3>
