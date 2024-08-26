@@ -29,7 +29,7 @@ const Navbar = () => {
                 <li id="home-link"><a href="#landing-page" onClick={hideMenu}>Home</a></li>
                 <li id="about-link"><a href="#about-page" onClick={hideMenu}>About</a></li>
                 <li id="rare-earth-link"><a href="#rare-earths-page" onClick={hideMenu}>Rare Earths</a></li>
-                <li id="service-link"><a href="#services-page" onClick={hideMenu}>Service</a></li>
+                <li id="service-link"><a href="#services-page" onClick={hideMenu}>Services</a></li>
                 <li id="collaborations-link"><a href="#collaborations-page" onClick={hideMenu}>Collaborations</a></li>
                 <li id="contact-link"><a href="#contact-page" onClick={hideMenu}>Contact</a></li>
             </ul>
