@@ -14,9 +14,13 @@ const Navbar = () => {
         setShowMenu(false)
     }
 
+    const logoClick = () => {
+        window.location ="#landing-page"
+    }
+
   return (
     <nav className="navbar">
-        <div className="logo">
+        <div className="logo" onClick={logoClick}>
             <img src={logo}/>
         </div>
         <div className="toggle-button" onClick={toggleMenu}>

@@ -16,6 +16,7 @@
 
 .logo {
     height: 50px;
+    cursor: pointer;
     /*opacity: 0; */
 }
 
