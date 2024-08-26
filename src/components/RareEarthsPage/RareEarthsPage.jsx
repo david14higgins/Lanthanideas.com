@@ -83,7 +83,7 @@ const RareEarthsPage = () => {
                 <h4>Direct Sublimation</h4>
                 <p>For many rare earth elements, the direct chemical reduction of oxides is thermodynamically unfavourable due to the highly negative Gibbs Free Energies associated with oxide formation. Despite this, certain rare earth metals possess a unique ability to readily sublime, which enables oxide reduction through the application of Le Chatelier’s principle. This principle can be summarized as follows:</p>
                 <br/>
-                <p>“If a dynamic equilibrium is disturbed by changing the conditions, the position of equilibrium shifts to counteract the change, thereby reestablishing equilibrium.”</p>
+                <p><span className="italics">"If a dynamic equilibrium is disturbed by changing the conditions, the position of equilibrium shifts to counteract the change, thereby reestablishing equilibrium.”</span></p>
                 <br/>
                 <p>In the case of rare earth elements like samarium, the metallic product formed from oxide reduction easily sublimes under vacuum conditions, thereby driving the reaction towards the right-hand side:</p>
                 <br/>
