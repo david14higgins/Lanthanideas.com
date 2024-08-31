@@ -151,15 +151,15 @@
         font-size: 3vw;
     }
 
-    .staff-photo-container {
+    .staff-details-container {
         width: 40%;
     }
 
-    .ian-photo-container {
+    .ian-details-container {
         margin-right: 20px
     }
     
-    .dave-photo-container {
+    .dave-details-container {
         margin-left: 20px;
     }
 }
@@ -175,15 +175,15 @@
         font-size: 1.6vw;
     }
 
-    .staff-photo-container {
+    .staff-details-container {
         width: 25%;
     }
 
-    .ian-photo-container {
+    .ian-details-container {
         margin-right: 15px
     }
     
-    .dave-photo-container {
+    .dave-details-container {
         margin-left: 15px;
     }
 }
@@ -199,15 +199,15 @@
         font-size: 1.4vw;
     }
 
-    .staff-photo-container {
+    .staff-details-container {
         width: 25%;
     }
 
-    .ian-photo-container {
+    .ian-details-container {
         margin-right: 15px
     }
     
-    .dave-photo-container {
+    .dave-details-container {
         margin-left: 15px;
     }
 }
