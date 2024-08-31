@@ -1,0 +1,62 @@
+@import '../../variables.css';
+
+
+.footer-container {
+    height: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-company-name-container {
+    width: 20%;
+}
+
+.footer-company-name-container p {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer-company-logo-container {
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.footer-company-logo-container img {
+    margin: auto;
+    height: 90%;
+
+}
+
+.footer-icon-attribution-container {
+    width: 20%;
+}
+
+
+/* ----- Responsive Settings ------ */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    
+}

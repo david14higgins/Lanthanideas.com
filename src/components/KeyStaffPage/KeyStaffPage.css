@@ -88,7 +88,7 @@
 .staff-photo-caption p {
     font-family: "Karla", sans-serif;
     font-weight: 500;
-    color: white;
+    color: var(--primary-white);
     font-size: 1.2vw;
     transform: translateY(10px);
     transition: 0.6s;

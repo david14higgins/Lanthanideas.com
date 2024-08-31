@@ -7,6 +7,7 @@ import RareEarthsPage from './components/RareEarthsPage/RareEarthsPage'
 import ServicesPage from './components/ServicesPage/ServicesPage'
 import ContactPage from './components/ContactPage/ContactPage'
 import CollaborationsPage from './components/CollaborationsPage/CollaborationsPage'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ServicesPage />
       <CollaborationsPage />
       <ContactPage />
+      <Footer />
     </div>
   )
 }
