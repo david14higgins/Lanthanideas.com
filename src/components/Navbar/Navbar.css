@@ -47,6 +47,7 @@
     margin: auto 0;
     position: relative;
     transition: 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 .navbar-links ul li a:hover::after{

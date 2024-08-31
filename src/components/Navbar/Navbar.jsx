@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from "../../assets/images/Lanthanideas-Logo.png"
 import "./Navbar.css"
+import { Link } from "react-scroll"
 
 const Navbar = () => {
 
@@ -14,14 +15,12 @@ const Navbar = () => {
         setShowMenu(false)
     }
 
-    const logoClick = () => {
-        window.location ="#landing-page"
-    }
-
   return (
     <nav className="navbar">
-        <div className="logo" onClick={logoClick}>
-            <img src={logo}/>
+        <div className="logo">
+            <Link to="landing-page" smooth={true} duration={1000} onClick={hideMenu}>
+                <img src={logo}/>
+            </Link>
         </div>
         <div className="toggle-button" onClick={toggleMenu}>
             <span className="bar"></span>
@@ -30,12 +29,12 @@ const Navbar = () => {
         </div>
         <div className={`navbar-links ${showMenu ? "active" : ""}`}>
             <ul>
-                <li id="home-link"><a href="#landing-page" onClick={hideMenu}>Home</a></li>
-                <li id="about-link"><a href="#about-page" onClick={hideMenu}>About</a></li>
-                <li id="rare-earth-link"><a href="#rare-earths-page" onClick={hideMenu}>Rare Earths</a></li>
-                <li id="service-link"><a href="#services-page" onClick={hideMenu}>Services</a></li>
-                <li id="collaborations-link"><a href="#collaborations-page" onClick={hideMenu}>Collaborations</a></li>
-                <li id="contact-link"><a href="#contact-page" onClick={hideMenu}>Contact</a></li>
+                <li id="home-link"><Link to="landing-page" smooth={true} duration={1000} onClick={hideMenu}>Home</Link></li>
+                <li id="about-link"><Link to="about-page" smooth={true} duration={1000} onClick={hideMenu}>About</Link></li>
+                <li id="rare-earth-link"><Link to="rare-earths-page" smooth={true} duration={1000} onClick={hideMenu}>Rare Earths</Link></li>
+                <li id="service-link"><Link to="services-page" smooth={true} duration={1000} onClick={hideMenu}>Services</Link></li>
+                <li id="collaborations-link"><Link to="collaborations-page" smooth={true} duration={1000} onClick={hideMenu}>Collaborations</Link></li>
+                <li id="contact-link"><Link to="contact-page" smooth={true} duration={1000} onClick={hideMenu}>Contact</Link></li>
             </ul>
         </div>
     </nav>

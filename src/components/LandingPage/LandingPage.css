@@ -81,6 +81,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.25s;
+    cursor: pointer;
     /* Uncomment for loading animation
     opacity: 0;*/
   }
