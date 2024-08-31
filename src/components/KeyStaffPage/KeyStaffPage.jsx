@@ -1,8 +1,10 @@
 import React from 'react'
 import profilePicture from "../../assets/images/Profile-Picture.jpeg"
 import defaultAvatar from "../../assets/images/Default-Avatar.jpg"
+import linkedIn from "../../assets/images/Linked-In.png"
 import '../Page.css'
 import './KeyStaffPage.css'
+
 
 
 const KeyStaffPage = () => {
@@ -12,8 +14,14 @@ const KeyStaffPage = () => {
             <h2>Key Staff</h2>
             <h3>Ian Higgins</h3>
 
-            <div className="staff-photo-container ian-photo-container">
-                <img src={profilePicture}/>
+            <div className="staff-details-container ian-details-container">
+              <div className="staff-photo-container">
+                  <img src={profilePicture}/>
+              </div>
+              <div className="staff-photo-background"></div>
+              <div className="staff-linked-in-container">
+                <a href="https://www.linkedin.com/in/ian-higgins-78855139/" target="_blank"><img src={linkedIn}/></a>
+              </div>
             </div>
 
             <p>Ian has a BSc in Chemistry and Geological Science from the University of Leeds and a PhD in High Temperature Materials from Newcastle University. He joined Johnson Matthey Rare Earth Products in 1993, initially working as a Process Development Engineer before moving into more commercial roles within the company.</p>
@@ -32,8 +40,14 @@ const KeyStaffPage = () => {
 
             <h3>Dave Murphy</h3>
 
-            <div className="staff-photo-container dave-photo-container">
-                <img src={defaultAvatar}/>
+            <div className="staff-details-container dave-details-container">
+              <div className="staff-photo-container">
+                  <img src={defaultAvatar}/>
+              </div>
+              <div className="staff-photo-background"></div>
+              <div className="staff-linked-in-container">
+                <a href="https://www.linkedin.com/in/dave-murphy-878a7943/" target="_blank"><img src={linkedIn}/></a>
+              </div>
             </div>
 
             <p>Dave holds a degree in Chemistry and a Diploma in Business Studies, from the University of Nottingham and the Open University. Following his studies, In 1969, Dave joined Thorium Ltd, a joint venture between Johnson Matthey and Rio Tinto Zinc which eventually evolved into JM-REP, a wholly owned Johnson Matthey company. There he spent several years working on solvent extraction and ion-exchange processing and rare earth salt preparation (including fluorides).  Eventually he was made responsible for developing industrial processes for making pure rare earth metals, including both calciothermic reduction of fluorides and reduction of samarium oxide to metal using either mischmetal of lanthanum as the reducing agent. </p>
