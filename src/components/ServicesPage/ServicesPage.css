@@ -41,6 +41,14 @@
     padding: 20px
 }
 
+.left-icon {
+    order: 1;
+}
+
+.right-text {
+    order: 2
+}
+
 .right-text h3 {
     margin-left: 20px;
 }
@@ -49,13 +57,13 @@
     padding-left: 20px;
 }
 
-.icon-container {
+.service-icon-container {
     width: 12%;
     float: right;
     margin: auto;
 }
 
-.icon-container img {
+.service-icon-container img {
     width: 100%;
 }
 
@@ -64,6 +72,29 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767.98px) { 
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-container-text {
+        width: 95%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .service-icon-container {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .right-text {
+        order: 1;
+    }
+
+    .left-icon {
+        order: 2;
+    }
+
     .service-container h3 {
         font-size: 6vw;
     }
@@ -75,6 +106,14 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    .service-container-text {
+        width: 70%;
+    }
+
+    .service-icon-container {
+        width: 20%;
+    }
+
     .service-container h3 {
         font-size: 2vw;
     }
@@ -86,6 +125,14 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .service-container-text {
+        width: 70%;
+    }
+
+    .service-icon-container {
+        width: 20%;
+    }
+
     .service-container h3 {
         font-size: 2vw;
     }
