@@ -1,5 +1,6 @@
 import React from 'react'
 import profilePicture from "../../assets/images/Profile-Picture.jpeg"
+import daveMurphy from "../../assets/images/Dave-Murphy.jpg"
 import defaultAvatar from "../../assets/images/Default-Avatar.jpg"
 import linkedIn from "../../assets/images/Linked-In.png"
 import '../Page.css'
@@ -45,7 +46,7 @@ const KeyStaffPage = () => {
 
               <div className="staff-details-container dave-details-container">
                 <div className="staff-photo-container">
-                    <img src={defaultAvatar}/>
+                    <img src={daveMurphy}/>
                 </div>
                 <div className="staff-photo-background"></div>
                 <div className="staff-linked-in-container">
