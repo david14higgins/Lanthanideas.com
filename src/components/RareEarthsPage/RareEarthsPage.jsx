@@ -3,7 +3,7 @@ import '../Page.css'
 import './RareEarthsPage.css'
 import rareEarthStones from '../../assets/images/Rare-Earth-Stones.png'
 import supplyChain from '../../assets/images/Supply-Chain.png'
-import factory from "../../assets/images/Factory.png"
+import factory from "../../assets/images/Factory-Blue.png"
 import manufacture from "../../assets/images/Manufacture.png"
 import Table from './Table'
 import { Element } from "react-scroll";

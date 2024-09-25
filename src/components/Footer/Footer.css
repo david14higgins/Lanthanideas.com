@@ -2,7 +2,7 @@
 
 
 .footer-container {
-    height: 10vh;
+    height: 5vh;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -10,16 +10,33 @@
     justify-content: space-between;
 }
 
-.footer-company-name-container {
-    width: 20%;
+.footer-text-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.footer-company-name-container p {
+.footer-text-container p {
     font-family: "Karla", sans-serif;
-    font-weight: 400;
-    color: black;
-    font-size: 20px;
-    text-align: center;
+    font-weight: 600;
+    color: var(--primary-blue);
+    font-size: 1vw;
+}
+
+.left-container p{
+    margin-left: 40px;
+}
+
+.right-container p{
+    flex: right;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.footer-text-container a {
+    color: var(--primary-orange);
+
 }
 
 .footer-company-logo-container {
@@ -34,9 +51,6 @@
 
 }
 
-.footer-icon-attribution-container {
-    width: 20%;
-}
 
 
 /* ----- Responsive Settings ------ */
@@ -44,19 +58,53 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767.98px) { 
 
+    .footer-container {
+        height: 10vh;
+        flex-direction: column;
+    }
+
+    .footer-text-container {
+        height: 25%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-text-container p {
+        font-size: 2vw;
+    }
+
+    .left-container p{
+        margin: 0;
+    }
+    
+    .right-container p{
+        margin: 0;
+    }
+
+    .footer-company-logo-container {
+        height: 40%;
+        margin: auto;
+        display: flex;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-   
+    .footer-text-container p {
+        font-size: 1.4vw;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    
+    .footer-text-container p {
+        font-size: 1.4vw;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
-    
+    .footer-text-container p {
+        font-size: 1.2vw;
+    }
 }
