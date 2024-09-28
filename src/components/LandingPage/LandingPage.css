@@ -8,6 +8,7 @@
     background-color: var(--primary-blue);
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
     min-height: 600px;
@@ -15,8 +16,12 @@
 
 .landing-content {
     padding: 0;
-    display: inline-block;
-    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
     height: max-content;
     margin: auto; 
     z-index: 1;
@@ -28,8 +33,8 @@
     font-size: 6vw;
     color: var(--primary-white);
     margin: 0; 
-    display: inline-block;
-    width: fit-content; 
+    padding-top: 50px;
+    
     /* Uncomment for loading animation
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     opacity: 0;
@@ -40,7 +45,7 @@
 .landing-content h2 {
     font-family: "Karla", sans-serif;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.6vw;
     color: var(--primary-white); 
     margin: 0;
     width: fit-content;
@@ -50,32 +55,15 @@
     transform: translateY(100px);*/
 }
 
-.coral-highlight {
-    color: var(--primary-orange);
-}
-
-.landing-pic-container {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    margin: 40px auto;
-    /* Uncomment for loading animation
-    transform: translateY(50px);
-    opacity: 0;*/
-}
-
-.landing-pic-container img {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+.highlight {
+    color: var(--primary-orange)
 }
 
 .learn-more-btn-container {
     width: 200px;
-    height: 60px; 
+    height: 80px; 
     position: relative;
-    margin: 0 auto;
+    margin: 30px auto;
     border: solid white 1px;
     display: flex;
     align-items: center;
