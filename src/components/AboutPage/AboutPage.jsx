@@ -41,7 +41,7 @@ const AboutPage = () => {
                     </div>
 
                     <div className="about-box text-box item-4">
-                        <p>At Lanthanideas, Ian is supported by <Link to="end-of-ians-section" className="staff-link" smooth={true} duration={1000}>Dave Murphy</Link> who is retained as Senior Advisor. Dave was previously Managing Director of Johnson Matthey Rare Earth Products before joining LCM and, more recently, Lanthanideas. Whilst working at Johnson Matthey in the 1970s and 1980s, Dave developed many of the processes still used today for commercial production of certain rare earth metals, including samarium, terbium and dysprosium.</p>
+                        <p>At Lanthanideas, Ian is supported by <Link to="end-of-ians-section" className="staff-link" smooth={true} duration={1000}>Dave Murphy</Link> who is retained as Senior Advisor. Dave was previously Managing Director of Johnson Matthey Rare Earth Products before joining LCM and, more recently, Lanthanideas. Whilst working at Johnson Matthey in the 1970s and 1980s, Dave developed many of the processes still used today for commercial production of certain rare earth metals, including terbium, dysprosium and samarium.</p>
                         <br/>
                         <p>Together, Ian and Dave offer a comprehensive technology service advising both on current practices for rare earth metal and alloy production, and proposing methods for improving efficiencies of the processes.</p>
                     </div>
