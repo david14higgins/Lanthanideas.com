@@ -98,6 +98,10 @@
     transition: 0.6s;
 }
 
+.staff-linked-in-container a {
+  pointer-events: none;
+}
+
 /* Hover effects for larger screens */
 @media (min-width: 992px) {
     .staff-details-container:hover .staff-photo-container {
@@ -116,6 +120,31 @@
     .staff-linked-in-container a img:hover {
         scale: 1.1;
     }
+
+    .staff-details-container:hover .staff-linked-in-container a {
+        pointer-events: auto;
+    }
+
+}
+
+/* Mobile/tablet tap effect */
+@media (max-width: 991.98px) {
+    .staff-details-container.active .staff-linked-in-container {
+        opacity: 1;
+    }
+
+    .staff-details-container.active .staff-photo-container {
+        filter: blur(10px);
+        opacity: 0.5;
+        transition: 0.6s;
+    }
+ 
+    .staff-details-container.active .staff-linked-in-container a img {
+        transform: translateY(0);
+        transition: 0.6s;
+    }.staff-details-container.active .staff-linked-in-container a {
+    pointer-events: auto;
+  } 
 
 }
 

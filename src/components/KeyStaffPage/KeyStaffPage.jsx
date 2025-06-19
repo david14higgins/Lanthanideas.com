@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import profilePicture from "../../assets/images/Profile-Picture.jpeg"
 import daveMurphy from "../../assets/images/Dave-Murphy.jpg"
 import defaultAvatar from "../../assets/images/Default-Avatar.jpg"
@@ -10,6 +10,17 @@ import { Element } from "react-scroll";
 
 
 const KeyStaffPage = () => {
+  const [activeStaff, setActiveStaff] = useState(null);
+
+  const isMobile = () => window.matchMedia("(max-width: 991.98px)").matches;
+
+  const handleStaffClick = (index) => {
+    if (isMobile()) {
+      setActiveStaff(activeStaff === index ? null : index);
+    }
+  };
+
+
   return (
     <Element name="key-staff-page">
       <div id="key-staff-page" className="page">
@@ -17,7 +28,7 @@ const KeyStaffPage = () => {
               <h2>Key Staff</h2>
               <h3>Ian Higgins</h3>
 
-              <div className="staff-details-container ian-details-container">
+              <div className={`staff-details-container ian-details-container${activeStaff === 1 ? " active" : ""}`} onClick={() => handleStaffClick(1)}>
                 <div className="staff-photo-container">
                     <img src={profilePicture}/>
                 </div>
@@ -44,7 +55,7 @@ const KeyStaffPage = () => {
 
               <h3>Dave Murphy</h3>
 
-              <div className="staff-details-container dave-details-container">
+              <div className={`staff-details-container dave-details-container${activeStaff === 2 ? " active" : ""}`} onClick={() => handleStaffClick(2)}>
                 <div className="staff-photo-container">
                     <img src={daveMurphy}/>
                 </div>
