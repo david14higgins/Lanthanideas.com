@@ -16,8 +16,10 @@
     transition: 0.2s;
 }
 
-.service-container:hover {
-    scale: 1.05;
+@media (min-width: 992px) {
+    .service-container:hover {
+        scale: 1.05;
+    }
 }
 
 .service-container-text {
