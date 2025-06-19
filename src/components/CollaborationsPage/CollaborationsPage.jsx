@@ -32,8 +32,8 @@ const CollaborationsPage = () => {
 
                 <div className="collaboration-container">
                   <h3>Trafalgar Rare Earth Alloys</h3>
-                  <p>In 2023, Ian Higgins began working with an international group to establish a vertically integrated rare earth metals, alloy, and magnet manufacturing facility in India. The group is led by Trafalgar EPC (Pte) Ltd, based in Gurugram, with support from Ian Higgins in the UK and experts in the USA and Switzerland.</p>
-                  <p>A new company, Trafalgar Rare Earth Alloys (Pte) Ltd, has been established to manage the project. The facility will process India-produced rare earth oxides into high-performance magnets, mainly for domestic industries. A site in Halol, Gujerat, has been secured, and a detailed project report is being prepared by M. N. Dastur & Company (Pte) Ltd.</p>
+                  <p>In 2023, Ian Higgins began working with an international group to establish a vertically integrated rare earth metals, alloy, and magnet manufacturing facility in India. The group is led by Trafalgar EPC (Pvt) Ltd, based in Gurugram, with support from Ian Higgins in the UK and experts in the USA and Switzerland.</p>
+                  <p>A new company, Trafalgar Rare Earth Alloys (Pvt) Ltd, has been established to manage the project. The facility will process India-produced rare earth oxides into high-performance magnets, mainly for domestic industries. A site in Halol, Gujarat, has been secured, and a detailed project report is being prepared by M. N. Dastur & Company (Pvt) Ltd.</p>
                   <div className="logo-container trafalgar-logo-container">
                     <img src={trafalgarLogo}/>
                   </div>

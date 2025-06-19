@@ -26,7 +26,7 @@ const AboutPage = () => {
                         </div>
                         <div className="about-image-background"></div>
                         <div className="image-caption">
-                            <p>Ian presenting at the Commonwealth Games, Birmingham 2022</p>
+                            <p>Ian presenting at the Commonwealth Games Advanced Mobility Event, Birmingham 2022</p>
                         </div>
                     </div>
 

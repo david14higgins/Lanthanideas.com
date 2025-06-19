@@ -54,7 +54,7 @@ const KeyStaffPage = () => {
                 </div>
               </div>
 
-              <p>Dave holds a degree in Chemistry and a Diploma in Business Studies, from the University of Nottingham and the Open University. Following his studies, in 1969, Dave joined Thorium Ltd, a joint venture between Johnson Matthey and Rio Tinto Zinc which eventually evolved into JM-REP, a wholly owned Johnson Matthey company. There he spent several years working on solvent extraction and ion-exchange processing and rare earth salt preparation. Eventually he was made responsible for developing industrial processes for making pure rare earth metals, including both calciothermic reduction of fluorides and reduction of samarium oxide to metal using either mischmetal of lanthanum as the reducing agent.</p>
+              <p>Dave holds a degree in Chemistry and a Diploma in Business Studies, from the University of Nottingham and the Open University. Following his studies, in 1969, Dave joined Thorium Ltd, a joint venture between Johnson Matthey and Rio Tinto Zinc which eventually evolved into JM-REP, a wholly owned Johnson Matthey company. There he spent several years working on solvent extraction and ion-exchange processing and rare earth salt preparation. Eventually he was made responsible for developing industrial processes for making pure rare earth metals, including both calciothermic reduction of fluorides and reduction of samarium oxide to metal using either mischmetal or lanthanum as the reducing agent.</p>
               <br/>
               <p>During his career at JM-REP, Dave gradually moved into more commercial roles, ultimately becoming General Manager, a post he held for several years.</p>
               <br/>
