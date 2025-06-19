@@ -85,10 +85,13 @@
     border-radius: 30px;
 }
 
-.image-box:hover .about-image-container {
-    transform: translate(0);
-    filter: blur(10px) ;
-    opacity: 0.5;
+/* Hover effects for larger screens */
+@media (min-width: 992px) {
+    .image-box:hover .about-image-container {
+        transform: translate(0);
+        filter: blur(10px) ;
+        opacity: 0.5;
+    }
 }
 
 .image-caption {
@@ -115,12 +118,15 @@
     transition: 0.6s;
 }
 
-.image-box:hover .image-caption {
-    opacity: 1;
-}
+/* Hover effects for larger screens */
+@media (min-width: 992px) {
+    .image-box:hover .image-caption {
+        opacity: 1;
+    }
 
-.image-box:hover .image-caption p{
-    transform: translateY(0);
+    .image-box:hover .image-caption p{
+        transform: translateY(0);
+    }
 }
 
 .about-image-background{
