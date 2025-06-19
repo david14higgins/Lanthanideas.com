@@ -129,6 +129,21 @@
     }
 }
 
+/* Hover effects for smaller screens */
+@media (max-width: 991.98px) {
+  .image-box.active .about-image-container {
+    transform: translate(0);
+    filter: blur(10px);
+    opacity: 0.5;
+  }
+  .image-box.active .image-caption {
+    opacity: 1;
+  }
+  .image-box.active .image-caption p {
+    transform: translateY(0);
+  }
+}
+
 .about-image-background{
     width: 90%;
     height: 100%;
